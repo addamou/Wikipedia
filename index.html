@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Mon AHS fichier CSS -->
+    <link rel="stylesheet" href="src/wiki.css">
+    <!-- Liens fontawesome css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>Wikipedia Search</title>
+</head>
+<body class="blue-grey darken-4">
+    <div class="container center-align boite">
+        <div class="container">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/63/Wikipedia-logo.png" alt="wikipedia icon" class="image">
+        </div>
+        <div class="row">
+            <form class="col s12" id="searchForm">
+                <div class="row ">
+                    <div class="input-field col s12 m8">
+                        <i class="material-icons prefix fa fa-pencil-square-o"></i>
+                        <input id="wikiInput" class="materialize-textarea white-text" type="text"></textarea>
+                        <label for="wikiInput">Wikipedia Recherche</label>
+                    </div>
+
+                    <div class="input-field col s12 m4">
+                        <button id="wikiBtn" class="btn waves-effect waves-light red darken-2 z-depth-5" type="submit" name="action">Rechercher
+                            <i class="fa fa-refresh right"></i>
+                        </button>
+                    </div>
+
+                </div>
+            </form>
+        </div>   
+    </div>
+    <div id="wikiResultat" class="container white-text col s11"></div>
+
+    <div class="footer blue-grey darken-1 center-align white-text"> 
+        <p>
+            <img src="src/logo.png" alt="logo" style="max-width: 30px; margin-right: 10px;"> 
+            <i class="fa fa-copyright"></i> CODELOCCOL 2020
+        </p>
+    </div>
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<!--Mon fichier javascript code AHS-->
+<script src="src/wiki.js"></script>
+</body>
+</html>
